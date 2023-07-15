@@ -24,11 +24,9 @@ export const Login = ()=>{
     const data=await response.json();
     
     if(data.success){
-        localStorage.setItem('token',data.token)
         setuser(data.user)
         localStorage.setItem('token',data.token);
         localStorage.setItem('user',user.name);   
-        console.log(localStorage.getItem('user'))
         toast.success(data.message);
         navigate('/profile')
       }
@@ -57,8 +55,6 @@ export const Login = ()=>{
 
                     <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Email address' className='formControlLg' onChange={(e)=>{setemail(e.target.value)}} type='email' size="lg"/>
                     <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Password' className='formControlLg' onChange={(e)=>{setpassword(e.target.value)}} type='password' size="lg"/>
-
-                    
                   
                   <button onClick={LoginHandler}  type='submit' className='mb-4 btn btn-primary' size='lg'>Login</button>
                     <div className='d-flex flex-row mt-3 mb-5'>
