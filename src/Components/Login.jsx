@@ -58,7 +58,7 @@ export const Login = ()=>{
                     <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Email address' className='formControlLg' onChange={(e)=>{setemail(e.target.value)}} type='email' size="lg"/>
                     <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Password' className='formControlLg' onChange={(e)=>{setpassword(e.target.value)}} type='password' size="lg"/>
 
-                    <p className="small mb-3 pb-lg-2"><a className="text-white-50" href="#!">Forgot password?</a></p>
+                    
                   
                   <button onClick={LoginHandler}  type='submit' className='mb-4 btn btn-primary' size='lg'>Login</button>
                     <div className='d-flex flex-row mt-3 mb-5'>
