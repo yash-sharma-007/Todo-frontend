@@ -1,0 +1,9 @@
+.remove-scroll {
+    overflow: auto;
+    overflow-wrap: break-word;
+  }
+  
+  .remove-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
